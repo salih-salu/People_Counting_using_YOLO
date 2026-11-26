@@ -194,9 +194,9 @@ while True:
     cv2.line(img, (int(x1), int(y1)), (int(x2), int(y2)), line_col, 3)
     mx, my = (x1 + x2) / 2, (y1 + y2) / 2
     cv2.putText(img, 'A', (int(mx + nx * 45) - 10, int(my + ny * 45) + 10),
-                cv2.FONT_HERSHEY_SIMPLEX, 2.0, (0, 255, 0), 2)
+                cv2.FONT_HERSHEY_SIMPLEX, 3.0, (0, 255, 0), 2)
     cv2.putText(img, 'B', (int(mx - nx * 45) - 10, int(my - ny * 45) + 10),
-                cv2.FONT_HERSHEY_SIMPLEX, 2.0, (255, 128, 0), 2)
+                cv2.FONT_HERSHEY_SIMPLEX, 3.0, (255, 128, 0), 2)
     cv2.rectangle(img, (10, 10), (260, 105), (0, 0, 0), -1)
     cv2.putText(img, f'A -> B : {count_ab}', (20, 42), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
     cv2.putText(img, f'B -> A : {count_ba}', (20, 78), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 128, 0), 2)
